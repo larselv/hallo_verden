@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="hallo verden tabell" language="en" table="x_1103676_hallo_ve_hallo_verden_tabell">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>hallo verden tabell</label>
+            <language>en</language>
+            <name>x_1103676_hallo_ve_hallo_verden_tabell</name>
+            <plural>hallo verden tabells</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-18 11:41:14</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>hallo verden tabell</sys_name>
+            <sys_package display_value="Hallo verden!" source="x_1103676_hallo_ve">4744a5a8c3743110ec39753ce00131a4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Hallo verden!">4744a5a8c3743110ec39753ce00131a4</sys_scope>
+            <sys_update_name>sys_documentation_x_1103676_hallo_ve_hallo_verden_tabell__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-18 11:41:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f2d429e8c3743110ec39753ce00131a2" label="hallo verden tabell" max_length="40" name="x_1103676_hallo_ve_hallo_verden_tabell" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Navn" max_length="40" name="navn" type="string"/>
+    </element>
+</database>

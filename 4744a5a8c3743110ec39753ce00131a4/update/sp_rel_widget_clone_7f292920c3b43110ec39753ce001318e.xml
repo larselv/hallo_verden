@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="theme_picker">6f292920c3b43110ec39753ce001318a</child>
+        <cloned>2023-08-18 12:00:07</cloned>
+        <last_validated>2023-08-18 12:00:07</last_validated>
+        <parent display_value="Theme Picker">fb378485cb30120000f8d856634c9ca5</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sp_platform&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope,$location) {
+
+	$scope.theme = {
+		displayValue: $scope.data.name,
+		value: $scope.data.sys_id,
+		name: 'theme'
+	};
+
+	var display_id = $location.search().sys_id;
+
+	$scope.$on("field.change", function(evt, parms) {		
+		if (parms.field.name == 'theme')
+			changePage(parms.newValue);
+	});
+
+	function changePage(p){
+		var path = $location.path();
+		var searchParms = $location.search();
+		$location.url(path + '?id=' + searchParms.id + '&amp;table=sp_theme&amp;sys_id=' + p);
+	}
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as/&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;true&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Theme Picker&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  var gr = new GlideRecord('sp_theme');
+  var sys_id = $sp.getParameter('sys_id')
+  gr.get(sys_id);
+  data.name = gr.getDisplayValue('name');
+  data.sys_id = gr.getDisplayValue('sys_id');
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-04 23:33:04&lt;/sys_created_on&gt;&lt;sys_id&gt;fb378485cb30120000f8d856634c9ca5&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Theme Picker&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;026ec7f1e8e1211076da10591ad28737&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fb378485cb30120000f8d856634c9ca5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-24 19:19:32&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default"&gt;
+  &lt;div class="panel-body form-horizontal"&gt;
+    &lt;label class="col-sm-1 control-label"&gt;${Theme}&lt;/label&gt;
+    &lt;div class="col-sm-11"&gt;
+      &lt;sn-record-picker field="theme" table="'sp_theme'" display-field="'name'" value-field="'sys_id'" search-fields="'name'" page-size="100" &gt;&lt;/sn-record-picker&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-18 12:00:07</sys_created_on>
+        <sys_id>7f292920c3b43110ec39753ce001318e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6f292920c3b43110ec39753ce001318a</sys_name>
+        <sys_package display_value="Hallo verden!" source="x_1103676_hallo_ve">4744a5a8c3743110ec39753ce00131a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hallo verden!">4744a5a8c3743110ec39753ce00131a4</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_7f292920c3b43110ec39753ce001318e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-18 12:00:07</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>
